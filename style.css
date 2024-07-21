@@ -1,0 +1,85 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+    margin: 0 auto !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1280px;
+    background-color: #98d4d4 !important;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.custom-btn{
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px !important;
+    color: #fff !important;
+}
+.custom-btn:hover{
+    color:black !important;
+}
+.m-25{
+    margin: 25px;
+}
+
+/* Animation */
+/* Animation keyframes */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animation to image and form */
+  .slide-in-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
+  }
+  
